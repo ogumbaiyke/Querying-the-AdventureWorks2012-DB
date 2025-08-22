@@ -76,7 +76,7 @@ ORDER BY soh.CustomerID, p.ProductID;
 
 -- Q4 Create a view called customersegment that shows the details (id, name, revenue) for customers – and their segments.
 
-CREATE VIEW CustomerSegment AS
+--CREATE VIEW CustomerSegment AS
 WITH CustomerRevenue AS (
     SELECT
         c.CustomerID,
@@ -109,7 +109,7 @@ FROM SegmentedRevenue;
 
 
 
--- Show the three top selling product (include productname) in each category (include categoryname) – by revenue?
+--Q5. Show the three top selling product (include productname) in each category (include categoryname) – by revenue?
 
 WITH ProductRevenue AS (
     SELECT
